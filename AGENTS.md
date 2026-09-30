@@ -120,3 +120,13 @@ Read in this order:
 22. `docs/TASKS.md`
 23. `docs/PROJECT-STATUS.md`
 24. `docs/CURRENT-HANDOFF.md`
+
+
+## Locked product decision records
+
+Implementation must preserve locked decisions unless the owner explicitly reopens them:
+
+- `docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`
+- `docs/decisions/PDISC-1B-PUBLICATION-TYPE-FIELD-MATRIX-LOCK.md`
+- `docs/decisions/PDISC-1C-MAGAZINE-ANALYTICS-MODERATION-LOCK.md`
+- `docs/decisions/PDISC-2-SOCIAL-TIMELINE-LOCK.md`
