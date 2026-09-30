@@ -23,7 +23,7 @@ Kalam Connect contains:
 - Messages — 1:1 and group chat;
 - Profiles — verified member identity/social profile;
 - Search and Notifications;
-- Staff/Admin — publishing, moderation, community/member administration and automation status.
+- Control Center / Staff Admin — manual publishing, media management, preview/scheduling, moderation, design/theme controls, analytics and automation monitoring.
 
 ## Program boundary
 
@@ -66,6 +66,7 @@ SOLO should execute KC1 against its Gate 1 / Gate 3 program architecture.
 - SOLO deployment architecture;
 - future Workflow/Automation Internal Communications Campaign contract;
 - KDS design-system availability for visual implementation.
+- Control Center implementation per `docs/CONTROL-CENTER.md`.
 
 ## Current non-blocking note
 
