@@ -137,7 +137,8 @@
 - [ ] Report/safety.
 - [ ] Participant isolation tests.
 
-## KC10 — Staff/admin
+## KC10 — Control Center / Staff Admin
+- [ ] Control Center overview dashboard.
 - [ ] Publication manager.
 - [ ] Review state.
 - [ ] Schedule.
@@ -148,6 +149,17 @@
 - [ ] Event/vacancy admin.
 - [ ] Activity log.
 - [ ] Automation receipt/status UI.
+- [ ] Native Media Library.
+- [ ] Upload validation/metadata/alt text.
+- [ ] Publication Preview Lab.
+- [ ] Light/dark and approved theme controls.
+- [ ] Publication template selector.
+- [ ] Category-style mapping.
+- [ ] Content analytics.
+- [ ] Community analytics.
+- [ ] Automation/delivery monitoring.
+- [ ] Manual publication fallback with origin/audit tracking.
+- [ ] Verify daily operation requires no direct DB/n8n/Webflow access.
 
 ## KC11 — SOLO/Automation
 - [ ] Capability manifest.
