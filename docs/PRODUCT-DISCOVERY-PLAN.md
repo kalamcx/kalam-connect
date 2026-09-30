@@ -78,27 +78,28 @@ Canonical locks:
 - `docs/decisions/PDISC-1B-PUBLICATION-TYPE-FIELD-MATRIX-LOCK.md`
 - `docs/decisions/PDISC-1C-MAGAZINE-ANALYTICS-MODERATION-LOCK.md`
 
-## PDISC-2 — Timeline/social graph
+## PDISC-2 — Timeline/social graph — LOCKED
 
-Define:
-- authored posts;
-- shared magazine publications;
-- tagged posts;
-- official projections;
-- reactions;
-- comments;
-- replies;
-- mentions;
-- follows/connections if adopted;
-- ranking;
-- privacy;
-- profile timeline projection;
-- content removal/edit behavior.
+Frozen:
+- canonical original/share/repost/quote objects;
+- Magazine Share;
+- Tag vs Mention;
+- automatic profile/Timeline tag projection;
+- one-way Follow graph;
+- For You / Following / Latest / Communities feeds;
+- deterministic ranking principles;
+- visibility/audience intersection;
+- reactions/comments/replies;
+- editing/deletion;
+- block/mute;
+- moderation;
+- notifications/search/analytics.
 
-Canonical detail:
-`docs/SOCIAL-TIMELINE-MODEL.md`
+Canonical:
+- `docs/SOCIAL-TIMELINE-MODEL.md`
+- `docs/decisions/PDISC-2-SOCIAL-TIMELINE-LOCK.md`
 
-## PDISC-3 — Profiles / settings / roles
+## PDISC-3 — Profiles / settings / roles — ACTIVE
 
 Define:
 - member profile anatomy;
