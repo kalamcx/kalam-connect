@@ -14,7 +14,7 @@ Kalam Connect combines:
 - **Messages** — private 1:1 and group conversations;
 - **Profiles** — verified member identity and social profile;
 - **Search & Notifications**;
-- **Staff/Admin** — publishing, moderation, community/member administration and automation status.
+- **Control Center / Staff Admin** — manual publishing, media uploads, preview/scheduling, design controls, moderation, analytics and automation monitoring.
 
 The Community timeline is social content. Messages is the chat surface.
 
@@ -70,10 +70,11 @@ Read in order:
 7. [Campaign & Automation Model](docs/AUTOMATION-CONTENT-MODEL.md)
 8. [SOLO Integration Contract](docs/SOLO-INTEGRATION-CONTRACT.md)
 9. [Design System](docs/DESIGN-SYSTEM.md)
-10. [Roadmap](docs/ROADMAP.md)
-11. [Tasks](docs/TASKS.md)
-12. [Project Status](docs/PROJECT-STATUS.md)
-13. [Current Handoff](docs/CURRENT-HANDOFF.md)
+10. [Control Center](docs/CONTROL-CENTER.md)
+11. [Roadmap](docs/ROADMAP.md)
+12. [Tasks](docs/TASKS.md)
+13. [Project Status](docs/PROJECT-STATUS.md)
+14. [Current Handoff](docs/CURRENT-HANDOFF.md)
 
 ## Security
 
