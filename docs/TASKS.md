@@ -1,3 +1,21 @@
+# PDISC — Product Discovery / Behavior Freeze
+- [ ] Freeze Magazine module builder and editorial controls.
+- [ ] Freeze Magazine card/reaction set.
+- [ ] Freeze Magazine Share → Timeline model.
+- [ ] Freeze comment visibility on shared Magazine posts.
+- [ ] Freeze tagged-person automatic projection.
+- [ ] Freeze Timeline post/share/repost behavior.
+- [ ] Decide Follow model.
+- [ ] Freeze Profile tabs and settings.
+- [ ] Freeze roles/capabilities/scopes.
+- [ ] Freeze Google + email auth rules.
+- [ ] Freeze People eligibility + Connect backlink model.
+- [ ] Complete open-source reuse scoring.
+- [ ] Complete mobile/desktop design prototypes.
+- [ ] Expand Function Map to permissions/state/visibility/audit/analytics/error states.
+- [ ] Owner accepts product behavior/design.
+- [ ] Issue SOLO implementation handoff.
+
 # Kalam Connect — Execution Checklist
 
 ## KC0 — Product & Architecture
