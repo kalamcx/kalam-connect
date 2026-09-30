@@ -290,3 +290,38 @@ Key rules:
 - legacy `Kalam Connects` items migrate into `publications` plus normalized people/category/media/action relationships;
 - legacy fields without a final native destination are preserved losslessly in migration metadata;
 - the preferred production boundary is a separate Kalam Connect application database/project consuming a minimal approved People projection.
+
+
+---
+
+## Publication behavior registry
+
+PDISC-1B is locked in:
+
+- `docs/PUBLICATION-TYPE-FIELD-MATRIX.md`
+- `docs/decisions/PDISC-1B-PUBLICATION-TYPE-FIELD-MATRIX-LOCK.md`
+
+Use separate concepts:
+
+```text
+publication_type
+publication_subtype
+category
+```
+
+Initial publication behavior types:
+
+- story
+- announcement
+- recognition
+- people_milestone
+- event
+- opportunity
+- poll
+- community_feature
+
+Categories remain editorial taxonomy and do not directly define application behavior.
+
+Prefer a controlled `publication_types` registry over a PostgreSQL enum so future approved types can be added without destructive type migrations.
+
+Type-specific fields are stored in controlled `type_data` initially, while normalized relationships handle people, categories, media and actions.
