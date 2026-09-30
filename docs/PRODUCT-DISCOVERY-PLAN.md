@@ -30,25 +30,46 @@ The current priority is to define the product behavior completely enough that SO
 
 ## PDISC-1 — Magazine editorial system
 
-Define:
-- homepage composition;
-- section/module builder;
-- card types;
-- manual ordering;
-- dynamic rules;
-- sorting;
-- filtering;
-- pinning;
-- scheduling;
-- audience targeting;
-- reactions;
-- share behavior;
-- comment behavior;
-- tagged-people projections;
-- moderation and archival.
+### PDISC-1A — Magazine Home & Builder — LOCKED
 
-Canonical detail:
-`docs/MAGAZINE-EDITORIAL-MODEL.md`
+Frozen:
+- homepage module architecture;
+- visual Magazine Builder;
+- Manual / Rule / Hybrid sourcing;
+- editorial precedence;
+- card family;
+- reaction set;
+- share behavior;
+- comment-on-share behavior;
+- tagged-person projections;
+- sorting/filtering;
+- scheduling/audience;
+- versioned layout + rollback.
+
+Canonical:
+- `docs/MAGAZINE-EDITORIAL-MODEL.md`
+- `docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`
+
+### PDISC-1B — Publication Types & Field Matrix — ACTIVE
+
+Freeze:
+- publication types;
+- shared fields;
+- type-specific fields;
+- required/optional rules;
+- media slots;
+- people relationships;
+- placement compatibility;
+- automation/manual constraints.
+
+### PDISC-1C — Magazine Analytics, Moderation & Edge Cases — PENDING
+
+Freeze:
+- analytics;
+- moderation;
+- publication edit/unpublish/archive consequences;
+- restricted/deleted dependencies;
+- archive/search edge behavior.
 
 ## PDISC-2 — Timeline/social graph
 
