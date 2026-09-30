@@ -84,15 +84,24 @@ Initial native types:
 - poll
 - community_feature
 
-#### PDISC-1C — Magazine Analytics, Moderation & Edge Cases — ACTIVE
-- [ ] Freeze publication/reaction/share analytics.
-- [ ] Freeze report/moderation behavior for official content.
-- [ ] Freeze edit/unpublish/archive consequences.
-- [ ] Freeze behavior when source media/person/community becomes unavailable.
-- [ ] Freeze reaction/share behavior on archived/restricted content.
-- [ ] Freeze Magazine search/archive edge cases.
+#### PDISC-1C — Magazine Analytics, Moderation & Edge Cases — COMPLETE / LOCKED
+- [x] Freeze publication/reaction/share analytics.
+- [x] Freeze report/moderation behavior for official content.
+- [x] Freeze edit/unpublish/archive consequences.
+- [x] Freeze behavior when source media/person/community becomes unavailable.
+- [x] Freeze reaction/share behavior on archived/restricted content.
+- [x] Freeze Magazine search/archive edge cases.
+- [x] Freeze archive vs withdrawn vs hard-delete semantics.
+- [x] Freeze published revision behavior and analytics privacy boundary.
+- [x] Record decision lock.
 
-### PDISC-2 — Timeline/social graph
+Canonical:
+- `docs/MAGAZINE-ANALYTICS-MODERATION-EDGE-CASES.md`
+- `docs/decisions/PDISC-1C-MAGAZINE-ANALYTICS-MODERATION-LOCK.md`
+
+**PDISC-1 Magazine Editorial System: COMPLETE / LOCKED**
+
+### PDISC-2 — Timeline/social graph — ACTIVE
 - [ ] Freeze post types.
 - [ ] Freeze tagging.
 - [ ] Freeze repost/quote-share decision.
