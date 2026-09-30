@@ -11,9 +11,20 @@
 
 KC0 produced the architecture skeleton, but the product is deliberately not implementation-ready yet.
 
-The active work is freezing:
+PDISC-1A is now **LOCKED**:
 - 100% staff-controlled Magazine composition/order/filter/schedule behavior;
-- Magazine reactions and Magazine Share → Timeline discussion model;
+- visual versioned Magazine Builder;
+- Manual / Rule / Hybrid module sourcing;
+- locked editorial precedence;
+- initial card family;
+- Like / Love / Celebrate / Support / Wow / Angry reactions;
+- Magazine Share → Timeline discussion model;
+- automatic official tagged-person projections.
+
+The active work now continues with **PDISC-1B — Publication Types & Field Matrix**, followed by PDISC-1C Magazine analytics/moderation edge cases.
+
+Remaining discovery also includes:
+- Timeline publishing/sharing/tagging behavior;
 - Timeline publishing/sharing/tagging behavior;
 - automatic tagged-person projection to personal and internal-public profile timelines;
 - profiles/settings/roles;
@@ -24,6 +35,9 @@ The active work is freezing:
 - complete function map.
 
 Implementation remains paused until the PDISC exit gate is approved.
+
+PDISC-1A decision record:
+`docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`
 
 ## Locked product definition
 
@@ -68,7 +82,7 @@ Webflow and Zoho Marketing Automation are delivery adapters/provider systems, no
 
 ## Current next milestone
 
-**PDISC-1 through PDISC-8 — behavior/design freeze**
+**PDISC-1B — Publication Types & Field Matrix**
 
 SOLO must not begin broad Connect implementation yet.
 
