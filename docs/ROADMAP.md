@@ -34,6 +34,76 @@ Exit gate:
 
 ---
 
+## PDISC — Product Behavior, Interaction & Design Discovery
+
+**Status: ACTIVE**
+
+Implementation is paused during this discovery gate.
+
+### PDISC-1 — Magazine editorial system
+- [ ] Freeze module/page-builder behavior.
+- [ ] Freeze card variants.
+- [ ] Freeze reaction behavior.
+- [ ] Freeze Magazine Share → Timeline behavior.
+- [ ] Freeze comment visibility model.
+- [ ] Freeze tagged-person projection rules.
+- [ ] Freeze editorial sort/filter/schedule/audience controls.
+
+### PDISC-2 — Timeline/social graph
+- [ ] Freeze post types.
+- [ ] Freeze tagging.
+- [ ] Freeze repost/quote-share decision.
+- [ ] Freeze reaction/comment/reply behavior.
+- [ ] Decide Follow vs no explicit graph.
+- [ ] Freeze public/internal profile timeline behavior.
+- [ ] Freeze edit/delete/moderation behavior.
+
+### PDISC-3 — Profiles/settings/roles
+- [ ] Freeze profile anatomy/tabs.
+- [ ] Freeze company vs member-editable fields.
+- [ ] Freeze settings groups.
+- [ ] Freeze platform roles.
+- [ ] Freeze capability/scoping model.
+
+### PDISC-4 — Auth/membership
+- [ ] Freeze Google + email auth UX.
+- [ ] Enforce kalam.cx + future-group.com domains.
+- [ ] Require eligible Kalam People record.
+- [ ] Freeze account provisioning.
+- [ ] Freeze People↔Connect app link.
+- [ ] Freeze joiner/mover/leaver behavior.
+
+### PDISC-5 — Design
+- [ ] Freeze mobile navigation.
+- [ ] Freeze desktop navigation.
+- [ ] Accept Magazine Home visual prototype.
+- [ ] Accept Timeline prototype.
+- [ ] Accept Profile prototype.
+- [ ] Accept Communities prototype.
+- [ ] Accept Messages prototype.
+- [ ] Accept Control Center prototype.
+- [ ] Accept KDS mapping.
+
+### PDISC-6 — Open-source/reuse
+- [ ] Review shortlisted projects.
+- [ ] Score UX/stack/security/test/license/KDS fit.
+- [ ] Decide reference-only vs selective reuse.
+- [ ] Record rejected architectural directions.
+
+### PDISC-7 — Function map
+- [ ] Expand every member/staff/system function with permissions, state, visibility, notifications, audit, analytics and failure states.
+
+### PDISC-8 — Prototype & owner freeze
+- [ ] Walk critical end-to-end flows.
+- [ ] Resolve open decisions.
+- [ ] Owner accepts behavior/design.
+- [ ] Reconcile final data model.
+- [ ] Issue versioned SOLO implementation handoff.
+
+**Exit gate:** owner-approved product behavior + design + function map. Only then proceed to KC1.
+
+---
+
 ## KC1 — Deployment Architecture & Repository Baseline
 
 **Owner:** SOLO + Kalam Connect
