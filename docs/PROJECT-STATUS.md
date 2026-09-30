@@ -39,11 +39,23 @@ PDISC-1C is now **LOCKED**:
 
 **PDISC-1 Magazine Editorial System is now COMPLETE / LOCKED.**
 
-The active work now continues with **PDISC-2 — Timeline / Social Graph**.
+PDISC-2 is now **LOCKED**:
+- canonical member post/share/repost/quote model is fixed;
+- Tag and Mention are separate;
+- tagged member profile/Timeline projections are deterministic;
+- one-way Follow model is fixed;
+- initial feeds are For You / Following / Latest / Communities;
+- For You is deterministic and excludes private-message/HR-performance data;
+- reactions/comments/replies are fixed;
+- member post destination and primary media are immutable after publish in MVP;
+- normal deletion is soft deletion;
+- block/mute, moderation, notifications, search and social analytics are defined.
+
+**PDISC-2 Timeline / Social Graph is COMPLETE / LOCKED.**
+
+The active work now continues with **PDISC-3 — Profiles / Settings / Roles**.
 
 Remaining discovery also includes:
-- Timeline publishing/sharing/tagging behavior;
-- automatic tagged-person projection to personal and internal-public profile timelines;
 - profiles/settings/roles;
 - Google + email authentication restricted to `kalam.cx` and `future-group.com` plus People eligibility;
 - People↔Connect app linkage at provisioning;
@@ -61,6 +73,9 @@ PDISC-1B decision record:
 
 PDISC-1C decision record:
 `docs/decisions/PDISC-1C-MAGAZINE-ANALYTICS-MODERATION-LOCK.md`
+
+PDISC-2 decision record:
+`docs/decisions/PDISC-2-SOCIAL-TIMELINE-LOCK.md`
 
 ## Locked product definition
 
@@ -105,7 +120,7 @@ Webflow and Zoho Marketing Automation are delivery adapters/provider systems, no
 
 ## Current next milestone
 
-**PDISC-2 — Timeline / Social Graph**
+**PDISC-3 — Profiles / Settings / Roles**
 
 SOLO must not begin broad Connect implementation yet.
 
