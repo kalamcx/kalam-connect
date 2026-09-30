@@ -101,16 +101,28 @@ Canonical:
 
 **PDISC-1 Magazine Editorial System: COMPLETE / LOCKED**
 
-### PDISC-2 — Timeline/social graph — ACTIVE
-- [ ] Freeze post types.
-- [ ] Freeze tagging.
-- [ ] Freeze repost/quote-share decision.
-- [ ] Freeze reaction/comment/reply behavior.
-- [ ] Decide Follow vs no explicit graph.
-- [ ] Freeze public/internal profile timeline behavior.
-- [ ] Freeze edit/delete/moderation behavior.
+### PDISC-2 — Timeline/social graph — COMPLETE / LOCKED
+- [x] Freeze canonical post/share/projection types.
+- [x] Freeze Tag vs Mention behavior.
+- [x] Freeze Repost and Quote behavior.
+- [x] Freeze Magazine Share behavior.
+- [x] Freeze reaction/comment/reply behavior.
+- [x] Lock one-way Follow model.
+- [x] Lock For You / Following / Latest / Communities feeds.
+- [x] Freeze feed ranking principles and fallback.
+- [x] Freeze visibility/audience rules.
+- [x] Freeze profile Timeline/Tagged projection behavior.
+- [x] Freeze edit/delete/tombstone behavior.
+- [x] Freeze block/mute/moderation behavior.
+- [x] Freeze social notifications/search/analytics.
+- [x] Record decision lock.
 
-### PDISC-3 — Profiles/settings/roles
+Canonical:
+- `docs/SOCIAL-TIMELINE-MODEL.md`
+- `docs/decisions/PDISC-2-SOCIAL-TIMELINE-LOCK.md`
+
+### PDISC-3 — Profiles/settings/roles — ACTIVE
+
 - [ ] Freeze profile anatomy/tabs.
 - [ ] Freeze company vs member-editable fields.
 - [ ] Freeze settings groups.
