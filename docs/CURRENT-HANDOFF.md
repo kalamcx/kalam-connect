@@ -1,7 +1,7 @@
 # Kalam Connect — Current Handoff to SOLO
 
 **Date:** 30/09/2026  
-**Handoff:** KC0 complete → KC1 ready
+**Handoff:** KC0 architecture skeleton complete → PDISC active → KC1 NOT YET READY
 
 ## What SOLO is receiving
 
@@ -20,7 +20,11 @@ A complete product/architecture baseline in `kalamcx/kalam-connect`:
 
 ## SOLO's next job
 
-Run **KC1 — Deployment Architecture & Repository Baseline** as part of SOLO's deployment gates.
+Do **not** begin broad Kalam Connect implementation yet.
+
+The Kalam Connect project is currently freezing behavior/design in PDISC. SOLO should consume the final versioned handoff only after PDISC-8 owner acceptance.
+
+Once PDISC closes, run **KC1 — Deployment Architecture & Repository Baseline** as part of SOLO's deployment gates.
 
 SOLO should determine:
 
