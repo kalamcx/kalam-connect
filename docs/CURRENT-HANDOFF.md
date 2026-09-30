@@ -180,8 +180,21 @@ Locked:
 - versioned layout publish/rollback;
 - Automation cannot silently alter Hero/modules/pins/manual ordering.
 
+## PDISC-1B locked decision
+
+Publication behavior/schema is frozen.
+
+Canonical:
+- `docs/PUBLICATION-TYPE-FIELD-MATRIX.md`
+- `docs/decisions/PDISC-1B-PUBLICATION-TYPE-FIELD-MATRIX-LOCK.md`
+- `docs/SCHEMA-BASELINE-LEGACY-MAPPING.md`
+
+Do not model the 12 legacy categories as 12 hard-coded app types.
+
+Use the locked Type + Subtype + Category model.
+
 ## Next exact discovery step
 
-**PDISC-1B — Publication Types & Field Matrix**
+**PDISC-1C — Magazine Analytics, Moderation & Edge Cases**
 
-Define every official publication type, shared fields, type-specific fields, required/optional data, media slots, people relationships, placement compatibility and manual/automation constraints.
+Freeze analytics event definitions, official-content moderation/reporting, edit/unpublish/archive consequences, source dependency failures, archived/restricted share behavior, and archive/search edge cases.
