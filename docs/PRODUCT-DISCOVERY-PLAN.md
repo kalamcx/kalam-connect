@@ -62,7 +62,7 @@ Freeze:
 - placement compatibility;
 - automation/manual constraints.
 
-### PDISC-1C — Magazine Analytics, Moderation & Edge Cases — PENDING
+### PDISC-1C — Magazine Analytics, Moderation & Edge Cases — LOCKED
 
 Freeze:
 - analytics;
@@ -70,6 +70,13 @@ Freeze:
 - publication edit/unpublish/archive consequences;
 - restricted/deleted dependencies;
 - archive/search edge behavior.
+
+**PDISC-1 Magazine Editorial System is complete and locked.**
+
+Canonical locks:
+- `docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`
+- `docs/decisions/PDISC-1B-PUBLICATION-TYPE-FIELD-MATRIX-LOCK.md`
+- `docs/decisions/PDISC-1C-MAGAZINE-ANALYTICS-MODERATION-LOCK.md`
 
 ## PDISC-2 — Timeline/social graph
 
