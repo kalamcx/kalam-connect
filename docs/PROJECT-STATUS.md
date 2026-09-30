@@ -7,11 +7,23 @@
 
 ## Current stage
 
-**KC0 — Product & Architecture Definition: COMPLETE**
+**PDISC — Product Behavior, Interaction & Design Discovery: ACTIVE**
 
-The repository now contains the canonical planning baseline for Kalam Connect as a member-only internal magazine/social/community/messaging product.
+KC0 produced the architecture skeleton, but the product is deliberately not implementation-ready yet.
 
-Implementation has not started in this repository.
+The active work is freezing:
+- 100% staff-controlled Magazine composition/order/filter/schedule behavior;
+- Magazine reactions and Magazine Share → Timeline discussion model;
+- Timeline publishing/sharing/tagging behavior;
+- automatic tagged-person projection to personal and internal-public profile timelines;
+- profiles/settings/roles;
+- Google + email authentication restricted to `kalam.cx` and `future-group.com` plus People eligibility;
+- People↔Connect app linkage at provisioning;
+- full design language/prototypes;
+- open-source reference/reuse decisions;
+- complete function map.
+
+Implementation remains paused until the PDISC exit gate is approved.
 
 ## Locked product definition
 
@@ -56,9 +68,11 @@ Webflow and Zoho Marketing Automation are delivery adapters/provider systems, no
 
 ## Current next milestone
 
-**KC1 — Deployment Architecture & Repository Baseline**
+**PDISC-1 through PDISC-8 — behavior/design freeze**
 
-SOLO should execute KC1 against its Gate 1 / Gate 3 program architecture.
+SOLO must not begin broad Connect implementation yet.
+
+After PDISC owner acceptance, proceed to **KC1 — Deployment Architecture & Repository Baseline** against SOLO Gate 1 / Gate 3.
 
 ## Known dependencies
 
