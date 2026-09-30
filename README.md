@@ -26,6 +26,8 @@ KC0 established the architecture skeleton, but implementation is intentionally p
 
 **Do not start feature implementation yet.**
 
+**PDISC-1A Magazine Home & Builder is locked.** Current active step: **PDISC-1B — Publication Types & Field Matrix**.
+
 After PDISC owner acceptance, SOLO resumes with KC1 — Deployment Architecture & Repository Baseline.
 
 ## Program ownership
