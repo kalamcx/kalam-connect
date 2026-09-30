@@ -85,7 +85,7 @@ Company-owned employee attributes remain read-only inside Connect.
 ## Execution rules
 
 1. Preserve product authority and repo documentation before large implementation.
-2. Implement milestones in `docs/ROADMAP.md` order.
+2. Complete PDISC behavior/design gates before implementation milestones in `docs/ROADMAP.md`.
 3. Do not treat visual prototypes or temporary provider adapters as product truth.
 4. Every automation-facing capability must be versioned, idempotent where applicable, auditable, and return a correlation/execution receipt.
 5. External publishing/sending remains human-gated unless a later approved policy explicitly changes it.
@@ -104,9 +104,17 @@ Read in this order:
 6. `docs/AUTH-SECURITY.md`
 7. `docs/AUTOMATION-CONTENT-MODEL.md`
 8. `docs/SOLO-INTEGRATION-CONTRACT.md`
-9. `docs/DESIGN-SYSTEM.md`
-10. `docs/CONTROL-CENTER.md`
-11. `docs/ROADMAP.md`
-12. `docs/TASKS.md`
-13. `docs/PROJECT-STATUS.md`
-14. `docs/CURRENT-HANDOFF.md`
+9. `docs/PRODUCT-DISCOVERY-PLAN.md`
+10. `docs/MAGAZINE-EDITORIAL-MODEL.md`
+11. `docs/SOCIAL-TIMELINE-MODEL.md`
+12. `docs/PROFILE-SETTINGS-ROLES.md`
+13. `docs/AUTH-MEMBERSHIP-PLAN.md`
+14. `docs/DESIGN-EXPERIENCE-PLAN.md`
+15. `docs/OPEN-SOURCE-RESEARCH-2026-09-30.md`
+16. `docs/FUNCTION-MAP.md`
+17. `docs/DESIGN-SYSTEM.md`
+18. `docs/CONTROL-CENTER.md`
+19. `docs/ROADMAP.md`
+20. `docs/TASKS.md`
+21. `docs/PROJECT-STATUS.md`
+22. `docs/CURRENT-HANDOFF.md`
