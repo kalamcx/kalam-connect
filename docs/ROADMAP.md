@@ -1,0 +1,335 @@
+# Kalam Connect — Implementation Roadmap
+
+## Operating rule
+
+One milestone at a time.
+
+Every milestone ends with:
+- evidence;
+- tests;
+- documentation update;
+- explicit exit-gate result.
+
+SOLO may execute the deployment/integration work, but this repository remains Kalam Connect product authority.
+
+---
+
+## KC0 — Product & Architecture Definition
+
+**Status: COMPLETE**
+
+Deliverables:
+- product brief;
+- information architecture;
+- target architecture;
+- logical data model;
+- auth/security model;
+- campaign/content model;
+- SOLO integration contract;
+- design direction;
+- roadmap/tasks/handoff.
+
+Exit gate:
+- repository contains enough authority for implementation planning without chat history.
+
+---
+
+## KC1 — Deployment Architecture & Repository Baseline
+
+**Owner:** SOLO + Kalam Connect
+
+Work:
+- confirm framework/runtime;
+- choose deployment platform;
+- define local/test/staging/production;
+- define CI/CD;
+- define secrets strategy;
+- define Supabase project/environment boundary;
+- define migration workflow;
+- define health/readiness surface;
+- make repository private before sensitive code/config is added if still public;
+- establish app scaffold only after architecture is approved.
+
+Do not:
+- start feature-heavy UI;
+- bind browser directly to n8n;
+- create provider secrets in frontend.
+
+Exit gate:
+- SOLO Gate 1 + Gate 3 compatible deployment architecture approved.
+
+---
+
+## KC2 — Shared People & Authentication Foundation
+
+Dependencies:
+- shared Kalam People contract available;
+- stable person ID confirmed.
+
+Work:
+- connect read-safe People projection;
+- establish Supabase Auth;
+- link auth user ↔ Connect profile ↔ stable person ID;
+- member eligibility check;
+- invite/login flow;
+- joiner/mover/leaver behavior;
+- inactive access test;
+- profile bootstrap.
+
+Exit gate:
+- only eligible Kalam members can authenticate;
+- no public signup bypass;
+- historical identity survives access disable.
+
+---
+
+## KC3 — Database, RLS, Storage & Security Foundation
+
+Work:
+- migrations for core tables;
+- roles/capabilities;
+- RLS;
+- trusted notification creation;
+- audit log;
+- protected storage;
+- realtime authorization;
+- rate-limit strategy;
+- integration service auth;
+- idempotency receipts.
+
+Exit gate:
+- security test matrix passes before member/social features expand.
+
+---
+
+## KC4 — Application Shell & KDS Foundation
+
+Work:
+- responsive app shell;
+- navigation;
+- Home / Community / Communities / Messages / Notifications / Profile / Search;
+- staff/admin navigation by capability;
+- KDS token integration;
+- primitives;
+- theme foundation;
+- loading/empty/error states;
+- accessibility baseline.
+
+Exit gate:
+- responsive shell and component foundation accepted on phone/tablet/desktop.
+
+---
+
+## KC5 — Magazine / Home
+
+Work:
+- publication model;
+- categories;
+- featured story;
+- latest posts;
+- recognition/people rail;
+- announcements;
+- events/opportunities;
+- publication detail;
+- audience/visibility;
+- schedule/expiry;
+- related people/community projections.
+
+Exit gate:
+- staff can create a native draft and members can consume published magazine content safely.
+
+---
+
+## KC6 — Community Timeline & Social Interaction
+
+Work:
+- member composer;
+- member posts;
+- feed;
+- reactions;
+- threaded comments;
+- mentions;
+- bookmarks;
+- report post/comment;
+- media;
+- visibility rules;
+- basic ranking/recency.
+
+Exit gate:
+- verified members can safely create and interact with social content.
+
+---
+
+## KC7 — Profiles, Directory, Search & Notifications
+
+Work:
+- member profile;
+- company vs member-editable fields;
+- people directory;
+- profile posts/recognitions;
+- unified search MVP;
+- in-app notifications;
+- notification preferences;
+- block/mute;
+- trusted notification fanout.
+
+Exit gate:
+- members can discover people/content without leaking restricted data.
+
+---
+
+## KC8 — Communities
+
+Work:
+- public/request/private community types;
+- membership requests;
+- community roles;
+- community rules;
+- community feed;
+- community member list;
+- community moderation;
+- optional community chat switch/contract.
+
+Exit gate:
+- private community isolation tested and scoped administration verified.
+
+---
+
+## KC9 — Messaging
+
+Work:
+- direct conversations;
+- group conversations;
+- participant management;
+- message send/read;
+- unread counts;
+- attachments;
+- basic message search;
+- reporting/safety path;
+- realtime delivery;
+- retention/privacy policy.
+
+Exit gate:
+- non-participants cannot read or mutate conversation content or attachments.
+
+---
+
+## KC10 — Staff Publishing, Moderation & Admin
+
+Work:
+- publication manager;
+- drafts/review/scheduled/published/archive;
+- event/vacancy management where Connect owns presentation;
+- community admin;
+- moderation queue;
+- report resolution;
+- member access controls;
+- staff activity log;
+- automation receipt/status views.
+
+Exit gate:
+- daily staff operations can be performed without direct DB access.
+
+---
+
+## KC11 — Campaign / SOLO / Automation Integration
+
+Dependencies:
+- Workflow Design internal campaign contract;
+- Automation capability manifest;
+- SOLO runtime contract adapter.
+
+Work:
+- versioned integration API;
+- connect.publication.upsert;
+- connect.publication.release;
+- publication status/reconciliation;
+- campaign/content refs;
+- multi-person recognition;
+- approved asset handling;
+- idempotency;
+- partial failure/degraded state;
+- delivery receipts;
+- Zoho MA adapter reconciliation upstream;
+- Webflow adapter treated as optional delivery, not Connect authority.
+
+Exit gate:
+- an approved campaign package can create/update/release a native Connect publication repeatedly without duplicates.
+
+---
+
+## KC12 — Reliability, Analytics & Production Readiness
+
+No major feature expansion.
+
+Work:
+- unit tests;
+- integration/contract tests;
+- E2E;
+- performance budgets;
+- accessibility QA;
+- security review;
+- backup/restore;
+- retention;
+- observability;
+- error monitoring;
+- automation degradation behavior;
+- analytics;
+- mobile QA;
+- load/realtime testing;
+- migration rehearsal;
+- rollback rehearsal.
+
+Critical E2E:
+- login/eligibility;
+- magazine read;
+- create post;
+- react/comment;
+- search profile;
+- join/request private community;
+- DM/group message isolation;
+- staff publication;
+- recognition multi-person;
+- moderation;
+- automation publication idempotency;
+- inactive member access;
+- logout.
+
+Exit gate:
+- production release candidate approved.
+
+---
+
+## KC13 — Staging & Production Deployment
+
+Work:
+- isolated staging;
+- production configuration;
+- final migrations;
+- auth redirect/domain;
+- `connect.kalam.cx`;
+- smoke tests;
+- monitoring;
+- rollback point;
+- launch validation.
+
+Exit gate:
+- production operational with no critical security/reliability findings.
+
+---
+
+## After launch
+
+Prioritize based on evidence:
+- richer feed relevance;
+- comment reactions;
+- enhanced messaging;
+- presence/typing;
+- PWA/offline;
+- richer member discovery;
+- community events;
+- recommendation/personalization;
+- richer staff campaign analytics;
+- additional notification channels.
+
+Do not add complexity merely because a public social platform has it.
