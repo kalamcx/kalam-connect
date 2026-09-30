@@ -1,9 +1,12 @@
 # PDISC — Product Discovery / Behavior Freeze
-- [ ] Freeze Magazine module builder and editorial controls.
-- [ ] Freeze Magazine card/reaction set.
-- [ ] Freeze Magazine Share → Timeline model.
-- [ ] Freeze comment visibility on shared Magazine posts.
-- [ ] Freeze tagged-person automatic projection.
+- [x] Freeze Magazine module builder and editorial controls.
+- [x] Freeze Magazine card/reaction set.
+- [x] Freeze Magazine Share → Timeline model.
+- [x] Freeze comment visibility on shared Magazine posts.
+- [x] Freeze tagged-person automatic projection.
+- [x] PDISC-1A Magazine Home/Builder lock recorded in `docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`.
+- [ ] PDISC-1B freeze publication type/field matrix.
+- [ ] PDISC-1C freeze Magazine analytics/moderation edge cases.
 - [ ] Freeze Timeline post/share/repost behavior.
 - [ ] Decide Follow model.
 - [ ] Freeze Profile tabs and settings.
