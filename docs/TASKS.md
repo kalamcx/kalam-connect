@@ -13,8 +13,13 @@
 - [x] PDISC-1C freeze Magazine analytics/moderation edge cases.
 - [x] PDISC-1C decision lock recorded in `docs/decisions/PDISC-1C-MAGAZINE-ANALYTICS-MODERATION-LOCK.md`.
 - [x] PDISC-1 Magazine Editorial System complete.
-- [ ] Freeze Timeline post/share/repost behavior.
-- [ ] Decide Follow model.
+- [x] Freeze Timeline post/share/repost behavior.
+- [x] Decide Follow model — one-way Follow locked.
+- [x] Freeze Tag vs Mention semantics and tagged profile projections.
+- [x] Freeze For You / Following / Latest / Communities feeds.
+- [x] Freeze Timeline visibility, editing, deletion, block/mute, moderation and analytics.
+- [x] PDISC-2 decision lock recorded in `docs/decisions/PDISC-2-SOCIAL-TIMELINE-LOCK.md`.
+- [x] PDISC-2 Timeline/Social Graph complete.
 - [ ] Freeze Profile tabs and settings.
 - [ ] Freeze roles/capabilities/scopes.
 - [ ] Freeze Google + email auth rules.
