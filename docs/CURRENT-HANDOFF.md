@@ -154,3 +154,34 @@ This includes:
 - moderation;
 - automation/campaign delivery status;
 - manual fallback when automation is unavailable.
+
+
+## PDISC-1A locked decision
+
+Magazine Home & Magazine Builder behavior is frozen.
+
+Canonical:
+- `docs/MAGAZINE-EDITORIAL-MODEL.md`
+- `docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`
+
+Do not reopen during implementation without an explicit owner decision.
+
+Locked:
+- staff-controlled module composition;
+- editable starter Magazine layout;
+- Manual / Rule / Hybrid module sources;
+- editorial precedence;
+- card variants;
+- initial six-reaction set;
+- Magazine Share creates Timeline Share;
+- discussion/comments live on each Timeline Share rather than one global Magazine thread;
+- official tagged people automatically project to relevant Timeline/profile/recognition surfaces;
+- separate publication/module/placement timing;
+- versioned layout publish/rollback;
+- Automation cannot silently alter Hero/modules/pins/manual ordering.
+
+## Next exact discovery step
+
+**PDISC-1B — Publication Types & Field Matrix**
+
+Define every official publication type, shared fields, type-specific fields, required/optional data, media slots, people relationships, placement compatibility and manual/automation constraints.
