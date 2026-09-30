@@ -27,10 +27,21 @@ PDISC-1B is now **LOCKED**:
 - All 12 legacy Connect categories map into those types/subtypes.
 - Universal and type-specific fields, media roles, people relationships, actions, placement compatibility, staff/automation ownership and lossless migration rules are defined.
 
-The active work now continues with **PDISC-1C — Magazine Analytics, Moderation & Edge Cases**.
+PDISC-1C is now **LOCKED**:
+- Archive, withdrawal and hard-delete semantics are fixed.
+- Published official content uses revisions.
+- Timeline Shares inherit source edit/archive/withdrawal state predictably.
+- Inactive/unresolved people, categories, media, communities and actions have defined fallback/reconciliation behavior.
+- Official-content reporting and moderation escalation are fixed.
+- Reaction/share count semantics and Magazine analytics events are defined.
+- Staff view analytics are aggregate by default rather than employee-surveillance lists.
+- Search/archive and degraded-state behavior are fixed.
+
+**PDISC-1 Magazine Editorial System is now COMPLETE / LOCKED.**
+
+The active work now continues with **PDISC-2 — Timeline / Social Graph**.
 
 Remaining discovery also includes:
-- Timeline publishing/sharing/tagging behavior;
 - Timeline publishing/sharing/tagging behavior;
 - automatic tagged-person projection to personal and internal-public profile timelines;
 - profiles/settings/roles;
@@ -47,6 +58,9 @@ PDISC-1A decision record:
 
 PDISC-1B decision record:
 `docs/decisions/PDISC-1B-PUBLICATION-TYPE-FIELD-MATRIX-LOCK.md`
+
+PDISC-1C decision record:
+`docs/decisions/PDISC-1C-MAGAZINE-ANALYTICS-MODERATION-LOCK.md`
 
 ## Locked product definition
 
@@ -91,7 +105,7 @@ Webflow and Zoho Marketing Automation are delivery adapters/provider systems, no
 
 ## Current next milestone
 
-**PDISC-1C — Magazine Analytics, Moderation & Edge Cases**
+**PDISC-2 — Timeline / Social Graph**
 
 SOLO must not begin broad Connect implementation yet.
 
