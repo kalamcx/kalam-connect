@@ -8,7 +8,8 @@
 - [x] Audit legacy Webflow Connect schema: People/Teams, Categories, Kalam Connects.
 - [x] Audit shared Kalam People database as identity source.
 - [x] Record lossless migration mapping and improved native target model.
-- [ ] PDISC-1B freeze publication type/field matrix.
+- [x] PDISC-1B freeze publication type/field matrix.
+- [x] PDISC-1B decision lock recorded in `docs/decisions/PDISC-1B-PUBLICATION-TYPE-FIELD-MATRIX-LOCK.md`.
 - [ ] PDISC-1C freeze Magazine analytics/moderation edge cases.
 - [ ] Freeze Timeline post/share/repost behavior.
 - [ ] Decide Follow model.
