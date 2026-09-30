@@ -100,10 +100,55 @@ Keep product analytics separate from privileged application audit.
 
 Do not store publication bodies or private message contents in analytics events.
 
-### member_posts
-Member-authored timeline content.
+### social_posts
+Canonical member-authored Timeline content.
 
-Can later converge technically with publications if implementation proves one model is cleaner, but permissions/lifecycle must remain distinct.
+Kinds:
+- original;
+- magazine_share;
+- quote.
+
+Important concepts:
+- author_profile_id;
+- body;
+- source_publication_id nullable;
+- source_post_id nullable;
+- community_id nullable;
+- audience_type;
+- comments_enabled;
+- edited_at;
+- deleted_at;
+- moderation_state;
+- timestamps.
+
+Published destination/audience is immutable in the initial product.
+
+Member social content remains distinct from official `publications`.
+
+### post_media
+Normalized media relationships for social posts.
+
+### post_people
+Structured people tags that drive Tagged/profile projections.
+
+### mentions
+Inline @member references. Mention does not create a Tagged profile projection.
+
+### post_reposts
+Distribution-only relation between a member and an original post.
+
+Reposts do not create a second reaction/comment thread.
+
+### follows
+One-way member Follow graph.
+
+No friend-request / mutual-connection system.
+
+### post_revisions
+Moderator-visible member-post revision evidence.
+
+### comment_reactions
+Initial comment/reply interaction uses a simple Like.
 
 ### publication_people
 Many-to-many relation between official content and people.
@@ -124,7 +169,15 @@ Magazine/topic categories.
 Normalized metadata around stored media where needed.
 
 ### comments
-Threaded discussion on member posts and Timeline Shares. Canonical Magazine publications do not have one global comment thread; discussion occurs on the member's Timeline Share.
+Threaded discussion on social posts.
+
+Initial model:
+- top-level comment;
+- one nested reply level;
+- replies-to-replies flatten into the same top-level thread;
+- soft-delete/tombstone preserves valid reply context.
+
+Canonical Magazine publications do not have one global comment thread; discussion occurs on the member's Magazine Share.
 
 ### reactions
 Reaction target + actor + reaction type.
@@ -365,3 +418,27 @@ Important distinctions:
 - Withdrawn source is removed from normal member circulation.
 - Magazine analytics are aggregate by default and do not provide a general viewer-surveillance list.
 - Search authorization is checked against current audience rules.
+
+
+---
+
+## Timeline / social graph lock
+
+PDISC-2 is locked in:
+
+- `docs/SOCIAL-TIMELINE-MODEL.md`
+- `docs/decisions/PDISC-2-SOCIAL-TIMELINE-LOCK.md`
+
+Core rules:
+- one-way Follow model;
+- feeds: For You / Following / Latest / Communities;
+- member audiences: all members or Community;
+- Tag ≠ Mention;
+- Repost = distribution-only;
+- Quote = new social post;
+- Magazine Share = new social post referencing publication;
+- sharing cannot widen source visibility;
+- post destination is immutable after publish;
+- member delete is soft delete;
+- block/mute have separate semantics;
+- social analytics are aggregate by default and are not employee-performance scoring.
