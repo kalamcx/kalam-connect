@@ -105,7 +105,8 @@ Read in this order:
 7. `docs/AUTOMATION-CONTENT-MODEL.md`
 8. `docs/SOLO-INTEGRATION-CONTRACT.md`
 9. `docs/DESIGN-SYSTEM.md`
-10. `docs/ROADMAP.md`
-11. `docs/TASKS.md`
-12. `docs/PROJECT-STATUS.md`
-13. `docs/CURRENT-HANDOFF.md`
+10. `docs/CONTROL-CENTER.md`
+11. `docs/ROADMAP.md`
+12. `docs/TASKS.md`
+13. `docs/PROJECT-STATUS.md`
+14. `docs/CURRENT-HANDOFF.md`
