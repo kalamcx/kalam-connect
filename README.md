@@ -20,11 +20,13 @@ The Community timeline is social content. Messages is the chat surface.
 
 ## Current stage
 
-**KC0 — Product & Architecture Definition: COMPLETE**
+**PDISC — Product Behavior, Interaction & Design Discovery: ACTIVE**
 
-**Next:** KC1 — Deployment Architecture & Repository Baseline, executed with SOLO.
+KC0 established the architecture skeleton, but implementation is intentionally paused while Magazine, Timeline, tagging, profiles, settings, roles, authentication, design and open-source reuse are fully mapped.
 
-Implementation has not started in this repository.
+**Do not start feature implementation yet.**
+
+After PDISC owner acceptance, SOLO resumes with KC1 — Deployment Architecture & Repository Baseline.
 
 ## Program ownership
 
@@ -69,12 +71,20 @@ Read in order:
 6. [Auth & Security](docs/AUTH-SECURITY.md)
 7. [Campaign & Automation Model](docs/AUTOMATION-CONTENT-MODEL.md)
 8. [SOLO Integration Contract](docs/SOLO-INTEGRATION-CONTRACT.md)
-9. [Design System](docs/DESIGN-SYSTEM.md)
-10. [Control Center](docs/CONTROL-CENTER.md)
-11. [Roadmap](docs/ROADMAP.md)
-12. [Tasks](docs/TASKS.md)
-13. [Project Status](docs/PROJECT-STATUS.md)
-14. [Current Handoff](docs/CURRENT-HANDOFF.md)
+9. [Product Discovery Plan](docs/PRODUCT-DISCOVERY-PLAN.md)
+10. [Magazine Editorial Model](docs/MAGAZINE-EDITORIAL-MODEL.md)
+11. [Social Timeline Model](docs/SOCIAL-TIMELINE-MODEL.md)
+12. [Profiles, Settings, Roles](docs/PROFILE-SETTINGS-ROLES.md)
+13. [Auth & Membership Plan](docs/AUTH-MEMBERSHIP-PLAN.md)
+14. [Design & Experience Plan](docs/DESIGN-EXPERIENCE-PLAN.md)
+15. [Open-Source Research](docs/OPEN-SOURCE-RESEARCH-2026-09-30.md)
+16. [Function Map](docs/FUNCTION-MAP.md)
+17. [Design System](docs/DESIGN-SYSTEM.md)
+18. [Control Center](docs/CONTROL-CENTER.md)
+19. [Roadmap](docs/ROADMAP.md)
+20. [Tasks](docs/TASKS.md)
+21. [Project Status](docs/PROJECT-STATUS.md)
+22. [Current Handoff](docs/CURRENT-HANDOFF.md)
 
 ## Security
 
