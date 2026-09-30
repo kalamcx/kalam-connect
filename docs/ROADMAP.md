@@ -214,9 +214,14 @@ Exit gate:
 
 ---
 
-## KC10 — Staff Publishing, Moderation & Admin
+## KC10 — Control Center / Staff Publishing, Moderation & Admin
+
+Canonical operations specification:
+
+`docs/CONTROL-CENTER.md`
 
 Work:
+- Control Center overview;
 - publication manager;
 - drafts/review/scheduled/published/archive;
 - event/vacancy management where Connect owns presentation;
@@ -225,10 +230,15 @@ Work:
 - report resolution;
 - member access controls;
 - staff activity log;
-- automation receipt/status views.
+- automation receipt/status views;
+- native Media Library;
+- publication preview lab;
+- design/theme/template controls within KDS governance;
+- content/community/automation monitoring;
+- manual publishing fallback when Automation/SOLO is unavailable.
 
 Exit gate:
-- daily staff operations can be performed without direct DB access.
+- daily staff operations can be performed without direct DB access, Supabase Studio, n8n, or Webflow Designer.
 
 ---
 
