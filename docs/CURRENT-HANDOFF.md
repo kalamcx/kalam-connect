@@ -193,8 +193,20 @@ Do not model the 12 legacy categories as 12 hard-coded app types.
 
 Use the locked Type + Subtype + Category model.
 
+## PDISC-1C locked decision
+
+Magazine lifecycle, analytics, moderation and failure behavior are frozen.
+
+Canonical:
+- `docs/MAGAZINE-ANALYTICS-MODERATION-EDGE-CASES.md`
+- `docs/decisions/PDISC-1C-MAGAZINE-ANALYTICS-MODERATION-LOCK.md`
+
+Magazine discovery PDISC-1A/1B/1C is complete.
+
+Do not reinterpret Archive as Withdrawal, or use hard delete for ordinary published-content lifecycle.
+
 ## Next exact discovery step
 
-**PDISC-1C — Magazine Analytics, Moderation & Edge Cases**
+**PDISC-2 — Timeline / Social Graph**
 
-Freeze analytics event definitions, official-content moderation/reporting, edit/unpublish/archive consequences, source dependency failures, archived/restricted share behavior, and archive/search edge cases.
+Freeze member post types, Magazine Share rendering, member tagging/projections, reaction/comment/reply behavior, repost/quote-share decision, Follow/social graph decision, feed construction/ranking, visibility, edit/delete behavior and moderation.
