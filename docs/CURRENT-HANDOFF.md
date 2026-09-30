@@ -205,8 +205,18 @@ Magazine discovery PDISC-1A/1B/1C is complete.
 
 Do not reinterpret Archive as Withdrawal, or use hard delete for ordinary published-content lifecycle.
 
+## PDISC-2 locked decision
+
+Timeline and Social Graph behavior are frozen.
+
+Canonical:
+- `docs/SOCIAL-TIMELINE-MODEL.md`
+- `docs/decisions/PDISC-2-SOCIAL-TIMELINE-LOCK.md`
+
+Do not replace Follow with friend requests/connections, merge Tag with Mention, or make Repost create a separate discussion thread during implementation.
+
 ## Next exact discovery step
 
-**PDISC-2 — Timeline / Social Graph**
+**PDISC-3 — Profiles / Settings / Roles**
 
-Freeze member post types, Magazine Share rendering, member tagging/projections, reaction/comment/reply behavior, repost/quote-share decision, Follow/social graph decision, feed construction/ranking, visibility, edit/delete behavior and moderation.
+Freeze profile anatomy and tabs, company-controlled vs member-controlled fields, follower/following presentation, profile privacy/tag settings, account/social/settings surfaces, roles, capabilities and scoped authority.
