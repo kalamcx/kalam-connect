@@ -153,7 +153,7 @@ Every official publication has:
 | slug | yes | Unique URL identifier |
 | publication_type | yes | FK/type registry |
 | publication_subtype | optional | Controlled subtype |
-| status | yes | draft/review/scheduled/published/archived |
+| status | yes | draft/review/scheduled/published/archived/withdrawn |
 | source | yes | migrated/manual/automation/system |
 | summary | optional | Card/detail summary |
 | body | optional | Rich publication body |
