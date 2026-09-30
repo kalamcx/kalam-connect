@@ -37,6 +37,7 @@ Recommended information architecture:
 Overview
 
 Content
+├── Magazine Builder
 ├── Publications
 ├── Drafts
 ├── Scheduled
@@ -130,7 +131,37 @@ Suggested widgets:
 
 ---
 
-# 3. Manual publication workflow
+# 3. Magazine Builder
+
+The Control Center includes a visual Magazine Builder governed by the locked PDISC-1A model.
+
+Staff can:
+
+- add/remove/show/hide Magazine modules;
+- drag/reorder modules;
+- choose layout and card presets;
+- configure Manual / Rule / Hybrid sourcing;
+- build filters;
+- choose sorting;
+- pin/exclude/manual-order publications;
+- set audience;
+- set module/placement schedule;
+- choose approved theme/accent;
+- preview desktop/tablet/mobile;
+- preview by audience;
+- save a draft layout;
+- publish a new layout version;
+- rollback to a previous layout version.
+
+Editorial precedence is fixed by:
+
+`docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`
+
+Automation cannot silently alter the live Magazine layout, Hero, pins or manual ordering.
+
+---
+
+# 4. Manual publication workflow
 
 Manual publishing must use the same native publication model as automation.
 
@@ -224,7 +255,7 @@ Display origin:
 
 ---
 
-# 4. Manual upload / Media Library
+# 5. Manual upload / Media Library
 
 The Control Center needs a native Media Library.
 
@@ -285,7 +316,7 @@ Recommended:
 
 ---
 
-# 5. Preview system
+# 6. Preview system
 
 Every official publication should have a preview before release.
 
@@ -307,7 +338,7 @@ The preview should use the real KDS/components, not a disconnected fake mockup.
 
 ---
 
-# 6. Publishing controls
+# 7. Publishing controls
 
 Authorized publishers should have:
 
@@ -335,7 +366,7 @@ All privileged publication actions create audit entries.
 
 ---
 
-# 7. Design Control System
+# 8. Design Control System
 
 Kalam Connect should not require developers for normal visual adjustments.
 
@@ -404,7 +435,7 @@ Staff may choose templates without editing application code.
 
 ---
 
-# 8. Design administration UX
+# 9. Design administration UX
 
 Recommended Design section:
 
@@ -447,7 +478,7 @@ Render sample content across:
 
 ---
 
-# 9. Design-system governance
+# 10. Design-system governance
 
 Do not expose unrestricted CSS editing to ordinary staff.
 
@@ -478,7 +509,7 @@ These go through Git/release management.
 
 ---
 
-# 10. Monitoring / Analytics
+# 11. Monitoring / Analytics
 
 Monitoring is split into four views.
 
@@ -537,7 +568,7 @@ This gives staff a human-readable operational layer without exposing raw n8n int
 
 ---
 
-# 11. Automation + manual control relationship
+# 12. Automation + manual control relationship
 
 Automation must produce the same objects that humans manage.
 
@@ -573,7 +604,7 @@ The platform must never stop internal publishing merely because automation is of
 
 ---
 
-# 12. Monitoring states
+# 13. Monitoring states
 
 Every external/integration object should have:
 
@@ -592,7 +623,7 @@ Do not represent every problem as a generic red error.
 
 ---
 
-# 13. Staff roles
+# 14. Staff roles
 
 Suggested capabilities:
 
@@ -631,12 +662,13 @@ Suggested capabilities:
 
 ---
 
-# 14. Control Center acceptance
+# 15. Control Center acceptance
 
 Before production, staff must be able to complete without DB access:
 
-1. create manual publication;
-2. upload image;
+1. configure and publish a Magazine layout version;
+2. create manual publication;
+3. upload image;
 3. select verified employee;
 4. preview;
 5. save draft;
