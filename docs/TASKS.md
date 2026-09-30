@@ -10,7 +10,9 @@
 - [x] Record lossless migration mapping and improved native target model.
 - [x] PDISC-1B freeze publication type/field matrix.
 - [x] PDISC-1B decision lock recorded in `docs/decisions/PDISC-1B-PUBLICATION-TYPE-FIELD-MATRIX-LOCK.md`.
-- [ ] PDISC-1C freeze Magazine analytics/moderation edge cases.
+- [x] PDISC-1C freeze Magazine analytics/moderation edge cases.
+- [x] PDISC-1C decision lock recorded in `docs/decisions/PDISC-1C-MAGAZINE-ANALYTICS-MODERATION-LOCK.md`.
+- [x] PDISC-1 Magazine Editorial System complete.
 - [ ] Freeze Timeline post/share/repost behavior.
 - [ ] Decide Follow model.
 - [ ] Freeze Profile tabs and settings.
