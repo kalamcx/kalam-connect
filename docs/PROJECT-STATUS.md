@@ -21,7 +21,13 @@ PDISC-1A is now **LOCKED**:
 - Magazine Share → Timeline discussion model;
 - automatic official tagged-person projections.
 
-The active work now continues with **PDISC-1B — Publication Types & Field Matrix**, followed by PDISC-1C Magazine analytics/moderation edge cases.
+PDISC-1B is now **LOCKED**:
+- Category and Publication Type are separate.
+- Eight initial native behavior types are fixed: story, announcement, recognition, people_milestone, event, opportunity, poll, community_feature.
+- All 12 legacy Connect categories map into those types/subtypes.
+- Universal and type-specific fields, media roles, people relationships, actions, placement compatibility, staff/automation ownership and lossless migration rules are defined.
+
+The active work now continues with **PDISC-1C — Magazine Analytics, Moderation & Edge Cases**.
 
 Remaining discovery also includes:
 - Timeline publishing/sharing/tagging behavior;
@@ -38,6 +44,9 @@ Implementation remains paused until the PDISC exit gate is approved.
 
 PDISC-1A decision record:
 `docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`
+
+PDISC-1B decision record:
+`docs/decisions/PDISC-1B-PUBLICATION-TYPE-FIELD-MATRIX-LOCK.md`
 
 ## Locked product definition
 
@@ -82,7 +91,7 @@ Webflow and Zoho Marketing Automation are delivery adapters/provider systems, no
 
 ## Current next milestone
 
-**PDISC-1B — Publication Types & Field Matrix**
+**PDISC-1C — Magazine Analytics, Moderation & Edge Cases**
 
 SOLO must not begin broad Connect implementation yet.
 
