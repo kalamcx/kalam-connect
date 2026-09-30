@@ -66,7 +66,7 @@ Messages
 Notifications
 Profile
 Search
-Staff/Admin
+Control Center / Staff Admin
 ```
 
 The timeline is social content. Messages is chat.
@@ -129,3 +129,24 @@ This tests identity, publishing, social interaction, notifications and automatio
 The next agent should not re-plan the product from scratch.
 
 Read `AGENTS.md` in this repository and proceed from KC1 unless the owner changes the product direction.
+
+
+## Control Center requirement
+
+Daily Marketing/Community operations must be possible from the native Connect Control Center without direct access to Supabase Studio, n8n, or Webflow Designer.
+
+Canonical specification:
+
+`docs/CONTROL-CENTER.md`
+
+This includes:
+- manual publication creation;
+- media upload/library;
+- preview;
+- review/approval;
+- schedule/publish/archive;
+- design/theme/template controls within KDS governance;
+- content/community analytics;
+- moderation;
+- automation/campaign delivery status;
+- manual fallback when automation is unavailable.
