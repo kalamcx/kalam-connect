@@ -270,3 +270,23 @@ When a person's membership becomes inactive:
 All production schema changes must be represented as migrations in Git.
 
 No undocumented production-only Supabase schema state.
+
+
+---
+
+## Legacy migration baseline
+
+The current migration baseline is documented in:
+
+`docs/SCHEMA-BASELINE-LEGACY-MAPPING.md`
+
+Key rules:
+
+- shared Kalam People remains employee/person authority;
+- Connect does not duplicate the full employee master;
+- initial Connect identity is keyed by stable `kalam_app_id`, with canonical `person_id` added when verified;
+- the 12 existing Webflow Connect categories seed the initial taxonomy;
+- Category and Publication Type are separate concepts;
+- legacy `Kalam Connects` items migrate into `publications` plus normalized people/category/media/action relationships;
+- legacy fields without a final native destination are preserved losslessly in migration metadata;
+- the preferred production boundary is a separate Kalam Connect application database/project consuming a minimal approved People projection.
