@@ -41,13 +41,39 @@ Exit gate:
 Implementation is paused during this discovery gate.
 
 ### PDISC-1 — Magazine editorial system
-- [ ] Freeze module/page-builder behavior.
-- [ ] Freeze card variants.
-- [ ] Freeze reaction behavior.
-- [ ] Freeze Magazine Share → Timeline behavior.
-- [ ] Freeze comment visibility model.
-- [ ] Freeze tagged-person projection rules.
-- [ ] Freeze editorial sort/filter/schedule/audience controls.
+
+#### PDISC-1A — Magazine Home & Builder — COMPLETE / LOCKED
+- [x] Freeze module/page-builder behavior.
+- [x] Freeze card variants.
+- [x] Freeze reaction behavior.
+- [x] Freeze Magazine Share → Timeline behavior.
+- [x] Freeze comment visibility model.
+- [x] Freeze tagged-person projection rules.
+- [x] Freeze editorial sort/filter/schedule/audience controls.
+- [x] Freeze versioned Magazine layout + rollback.
+- [x] Record product decision lock.
+
+Canonical:
+- `docs/MAGAZINE-EDITORIAL-MODEL.md`
+- `docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`
+
+#### PDISC-1B — Publication Types & Field Matrix — ACTIVE
+- [ ] Freeze publication types.
+- [ ] Define universal publication fields.
+- [ ] Define type-specific fields.
+- [ ] Define required/optional fields.
+- [ ] Define media slots/aspect rules by type.
+- [ ] Define tagged-person relationship types.
+- [ ] Define placement compatibility by type.
+- [ ] Define automation/manual creation constraints.
+
+#### PDISC-1C — Magazine Analytics, Moderation & Edge Cases — PENDING
+- [ ] Freeze publication/reaction/share analytics.
+- [ ] Freeze report/moderation behavior for official content.
+- [ ] Freeze edit/unpublish/archive consequences.
+- [ ] Freeze behavior when source media/person/community becomes unavailable.
+- [ ] Freeze reaction/share behavior on archived/restricted content.
+- [ ] Freeze Magazine search/archive edge cases.
 
 ### PDISC-2 — Timeline/social graph
 - [ ] Freeze post types.
