@@ -80,7 +80,25 @@ Important fields:
 - idempotency_key.
 
 Lifecycle:
-`draft → review → scheduled → published → archived`.
+`draft → review → scheduled → published → archived`, with exceptional `withdrawn` state from scheduled/published content.
+
+### publication_revisions
+Immutable snapshots of official publication changes after review/publication.
+
+Supports:
+- revision number;
+- snapshot;
+- change summary;
+- actor/source;
+- approval reference;
+- published revision tracking.
+
+### magazine_analytics_events
+Product engagement events for Magazine discovery/interaction.
+
+Keep product analytics separate from privileged application audit.
+
+Do not store publication bodies or private message contents in analytics events.
 
 ### member_posts
 Member-authored timeline content.
@@ -106,7 +124,7 @@ Magazine/topic categories.
 Normalized metadata around stored media where needed.
 
 ### comments
-Threaded post/publication comments.
+Threaded discussion on member posts and Timeline Shares. Canonical Magazine publications do not have one global comment thread; discussion occurs on the member's Timeline Share.
 
 ### reactions
 Reaction target + actor + reaction type.
@@ -325,3 +343,25 @@ Categories remain editorial taxonomy and do not directly define application beha
 Prefer a controlled `publication_types` registry over a PostgreSQL enum so future approved types can be added without destructive type migrations.
 
 Type-specific fields are stored in controlled `type_data` initially, while normalized relationships handle people, categories, media and actions.
+
+
+---
+
+## Magazine lifecycle, moderation and analytics
+
+PDISC-1C is locked in:
+
+- `docs/MAGAZINE-ANALYTICS-MODERATION-EDGE-CASES.md`
+- `docs/decisions/PDISC-1C-MAGAZINE-ANALYTICS-MODERATION-LOCK.md`
+
+Important distinctions:
+
+- Archive = normal historical state.
+- Withdrawn = exceptional removal from circulation.
+- Hard deletion = exceptional privileged action.
+- Published official content is revisioned.
+- Timeline Shares resolve the current approved source revision.
+- Archived source remains historically available by default.
+- Withdrawn source is removed from normal member circulation.
+- Magazine analytics are aggregate by default and do not provide a general viewer-surveillance list.
+- Search authorization is checked against current audience rules.
