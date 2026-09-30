@@ -5,6 +5,9 @@
 - [x] Freeze comment visibility on shared Magazine posts.
 - [x] Freeze tagged-person automatic projection.
 - [x] PDISC-1A Magazine Home/Builder lock recorded in `docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`.
+- [x] Audit legacy Webflow Connect schema: People/Teams, Categories, Kalam Connects.
+- [x] Audit shared Kalam People database as identity source.
+- [x] Record lossless migration mapping and improved native target model.
 - [ ] PDISC-1B freeze publication type/field matrix.
 - [ ] PDISC-1C freeze Magazine analytics/moderation edge cases.
 - [ ] Freeze Timeline post/share/repost behavior.
