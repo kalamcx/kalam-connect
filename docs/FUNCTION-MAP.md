@@ -55,30 +55,88 @@ Each function must eventually define:
 
 # B. Timeline / Social
 
-## Member
-- open personalized Timeline;
-- change feed tab/filter;
-- create post;
-- upload media;
+## Member — feed
+- open For You;
+- open Following;
+- open Latest;
+- open Communities feed;
+- refresh;
+- navigate to source post/publication/profile/community.
+
+## Member — create
+- create original post;
+- add text;
+- upload image/gallery/video/approved attachment;
+- add safe link;
 - tag people;
-- post to community;
-- react;
+- mention people;
+- choose All Members or eligible Community;
+- publish.
+
+## Member — share/distribute
+- share Magazine publication with optional commentary;
+- repost member post without commentary;
+- undo repost;
+- quote member post with commentary.
+
+## Member — interact
+- react/change/remove reaction;
 - comment;
-- reply;
-- share Magazine publication;
-- possibly repost member content after decision;
-- bookmark;
-- report;
-- hide;
-- block/mute user;
-- delete/edit own post according to policy.
+- reply one level;
+- Like comment/reply;
+- edit own comment;
+- delete own comment;
+- hide comment on own post;
+- turn comments on/off;
+- bookmark where enabled.
+
+## Member — social graph
+- follow;
+- unfollow;
+- mute;
+- unmute;
+- block;
+- unblock.
+
+## Member — tagging/profile control
+- hide tagged projection from own profile;
+- remove own tag from member-authored post;
+- report/request correction for official tagged publication.
+
+## Member — own post lifecycle
+- edit text/tags/alt text;
+- view Edited state;
+- soft-delete post.
+
+Member cannot after publish:
+- widen/change destination;
+- change post kind/source;
+- replace/add/remove primary media in MVP.
+
+## Member — safety
+- report post/share/quote/comment/profile;
+- hide/collapse blocked content according to shared-Community rules.
 
 ## System
-- project tagged official content into tagged person's Timeline;
-- project tagged content to internal public profile;
-- notify tagged people;
-- respect blocks/mutes/audience;
-- paginate/rank deterministic feed.
+- build deterministic For You feed;
+- build chronological Following/Latest feeds;
+- project structured Tags to tagged member Timeline/profile;
+- distinguish Tag from Mention;
+- enforce source-audience intersection on share/repost/quote;
+- suppress blocked/muted interactions;
+- remove Reposts when source is deleted/moderated;
+- render unavailable source for Quote when ordinary source delete permits quote commentary to remain;
+- create trusted notifications;
+- preserve revision/moderation evidence;
+- fall back to Latest if ranking is unavailable.
+
+## Moderator
+- triage report;
+- hide/remove/restore content;
+- lock comments;
+- restrict posting/commenting;
+- escalate member access issue;
+- preserve audit reason.
 
 ---
 
