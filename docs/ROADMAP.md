@@ -57,17 +57,34 @@ Canonical:
 - `docs/MAGAZINE-EDITORIAL-MODEL.md`
 - `docs/decisions/PDISC-1A-MAGAZINE-HOME-BUILDER-LOCK.md`
 
-#### PDISC-1B — Publication Types & Field Matrix — ACTIVE
-- [ ] Freeze publication types.
-- [ ] Define universal publication fields.
-- [ ] Define type-specific fields.
-- [ ] Define required/optional fields.
-- [ ] Define media slots/aspect rules by type.
-- [ ] Define tagged-person relationship types.
-- [ ] Define placement compatibility by type.
-- [ ] Define automation/manual creation constraints.
+#### PDISC-1B — Publication Types & Field Matrix — COMPLETE / LOCKED
+- [x] Freeze publication types.
+- [x] Define universal publication fields.
+- [x] Define type-specific fields.
+- [x] Define required/optional fields.
+- [x] Define media roles by type.
+- [x] Define tagged-person relationship types.
+- [x] Define placement compatibility by type.
+- [x] Define automation/manual creation constraints.
+- [x] Separate Category from Publication Type.
+- [x] Map all 12 legacy Connect categories.
+- [x] Record decision lock.
 
-#### PDISC-1C — Magazine Analytics, Moderation & Edge Cases — PENDING
+Canonical:
+- `docs/PUBLICATION-TYPE-FIELD-MATRIX.md`
+- `docs/decisions/PDISC-1B-PUBLICATION-TYPE-FIELD-MATRIX-LOCK.md`
+
+Initial native types:
+- story
+- announcement
+- recognition
+- people_milestone
+- event
+- opportunity
+- poll
+- community_feature
+
+#### PDISC-1C — Magazine Analytics, Moderation & Edge Cases — ACTIVE
 - [ ] Freeze publication/reaction/share analytics.
 - [ ] Freeze report/moderation behavior for official content.
 - [ ] Freeze edit/unpublish/archive consequences.
